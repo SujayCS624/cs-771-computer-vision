@@ -1,0 +1,12 @@
+output_folder: "../logs"
+dataset:
+  name: "AFHQ"
+  data_folder: "../data/afhq/train"
+model:
+  dim: 96
+  context_dim: 96
+  use_vae: True
+  vae_encoder_weights: "../pretrained/taesd_encoder.pth"
+  vae_decoder_weights: "../pretrained/taesd_decoder.pth"
+train_cfg:
+  epochs: 200
